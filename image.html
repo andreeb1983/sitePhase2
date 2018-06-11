@@ -41,10 +41,10 @@
        <nav>
            <!-- zone du menu les liens pour passer de pagee en pages  -->
            <div class="ancreNav">
-               <a href="index.html" title="Accueil" class="active">Accueil</a>
+               <a href="index.html" title="Accueil" >Accueil</a>
                <a href="texte.html" title="Texte">Texte</a>
                <a href="selecteur.html" title="Sélecteur">Sélecteur</a>
-               <a href="image.html" title="Image">Image</a>
+               <a href="image.html" title="Image" class="active">Image</a>
                <a href="position.html" title="Position">Position</a>
                <a href="zoning.html" title="Zoning">Zoning</a>
                <a href="tableau.html" title="Tableau">Tableau</a>
@@ -55,31 +55,25 @@
                <a href="animation.html" title="Animation">Animation</a>
            </div>
        </nav>
-       <main> <!-- contenu principal -->
-        <aside> <!-- contenu secondaire -->
-            <!-- de côté -->
-        </aside>
-        <section> <!-- zone de contenu, regroupement thématique, texte, titres etc. -->
-            <div>
-                <h2>un titre</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum animi possimus nam qui sint placeat provident mollitia quidem ipsum id. Ipsum voluptatem libero quia. Ratione eius consectetur magnam dolore ipsa!</p>
-                 <!-- zone complémentaire de contenu div -->
-            </div>
-            <span>
-                <h3> un titre</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil laboriosam nam necessitatibus minima labore nisi quidem eum natus, architecto libero non corrupti, aliquid nesciunt dolores, rem maxime harum repudiandae hic!</p>
-                <!-- zone complémentaire de contenu span -->
-            </span>
-            <article>
-                <h4>un autre</h4>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit nam, itaque a ullam consequuntur delectus iure! Reiciendis odio, adipisci atque in necessitatibus repellat saepe officiis tempore! Sunt distinctio eos aperiam.</p>
-             <!-- zone complémentaire de contenu article -->
-            </article>
+       <main> <!-- contenu principal -->      
+        <section class="imageFond"> 
+            <h3>Une image de fond en CSS</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis porro praesentium, provident consequuntur consequatur facilis autem a, incidunt illum suscipit excepturi voluptates odit vitae asperiores fuga ratione et. Tenetur, autem.</p>
+           
+        </section>
+        <section>
+            <h3>Image dans le HTML</h3>
+            <img src="img/toureiffel.jpg" alt="la tour eiffel" title="une belle imge de la toue eiffel">
+        </section>
+        <section class="aucentre">
+            <h3>Image dans le HTML avec des effets CSS</h3>
+            <img src="img/image.jpg" alt="San Francisco: le Golden Gate" title="le Golden Gate" class="imagegolden">
+            <img src="img/image.jpg" alt="San Francisco: le Golden Gate" title="le Golden Gate" class="imagegolden">
+            <img src="img/image.jpg" alt="San Francisco: le Golden Gate" title="le Golden Gate" class="imagegolden rotation360">
         </section>
        </main> <!-- fin de main -->
        <footer>
-
-           <!-- pied de page -->footer
-       </footer>
+          
+       </footer>  <!-- pied de page -->
 </body>
 </html>
