@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- les typos google font anton lemeonda oswald -->
+    <link href="https://fonts.googleapis.com/css?family=Anton|Lemonada:400,700|Oswald:400,600" rel="stylesheet">
+    <!-- font awesome en cdn -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!-- le descriptif qui s'affiche sur un résultat de recherche google -->
+    <meta name="description" content="Site de la phase 2 Andrée Baptiste Pantin 2018/2019 LePoleS">
+    <!-- les mots clés utiles pour les moteurs de recherche moins utilisé de nos jours -->
+    <meta name="keywords" content="HTML, CSS, lepoles pantin">
+    <!-- l'auteur de la page -->
+    <meta name="author" content="Andrée Baptiste">
+    <!-- les mots clés, utiles pour les moteurs de recherche -->
+    <title>Tableau</title>
+    <!-- ma feuille de style -->
+    <link href="css/style.css"  rel="stylesheet">
+</head>
+<body>  
+       <header>
+           <div id="logo">
+
+                <a href="#logo">
+                    <button type="button"><i class="fas fa-arrow-circle-up" aria-hidden="true"></i></button>
+                </a>
+                <img src="img/logo.png" alt="logo">
+             </div> <!-- fin id logo -->
+            <div id="sloggan">
+              <a href="index.html" title="Mon premier site en HTML: accueil"><h1> Mon premier site en HTML5 et CSS3</h1>
+            </a>
+            </div>
+           <div id="social">
+               <a href="https://www.instagram.com/?hl=fr" target="_blank" aria-hidden="true"><i class="fab fa-instagram"></i></a>
+               <a href="https://fr-fr.facebook.com/" target="_blank" aria-hidden="true"><i class="fab fa-facebook-square"></i></a>
+           </div> <!-- fin id social -->
+           <div id="clear"></div>
+       </header>
+       <nav>
+           <!-- zone du menu les liens pour passer de pagee en pages  -->
+           <div class="ancreNav">
+               <a href="index.html" title="Accueil">Accueil</a>
+               <a href="texte.html" title="Texte">Texte</a>
+               <a href="selecteur.html" title="Sélecteur">Sélecteur</a>
+               <a href="image.html" title="Image">Image</a>
+               <a href="position.html" title="Position">Position</a>
+               <a href="zoning.html" title="Zoning">Zoning</a>
+               <a href="tableau.html" title="Tableau" class="active">Tableau</a>
+               <a href="liste.html" title="Liste">Liste</a>
+               <a href="lien_menu.html" title="Lien">Lien</a>
+               <a href="formulaire.html" title="Formulaire">Formulaire</a>
+               <a href="multimedia.html" title="Multimédia">Multimédia</a>
+               <a href="animation.html" title="Animation">Animation</a>
+           </div>
+       </nav>
+       <main> <!-- contenu principal -->
+        <h2>Un tableau</h2>
+        <section class="tableau">
+            <table>
+                <!-- la légende du tableau -->
+                <caption><i class="fas fa-plane"></i>Vols /// Paris -> Rome</caption>
+                <thead>
+                    <tr>
+                        <td>Dates</td>
+                        <td>02//08/2017</td>
+                        <td>03/08/2017</td>
+                        <td>05/08/2017</td>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <td>Dates</td>
+                        <td>02//08/2017</td>
+                        <td>03/08/2017</td>
+                        <td>05/08/2017</td>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">Air France</td>
+                        <td>Départ 10 h - Arrivé 13 h</td>
+                        <td>Départ 15 h - Arrivé 18 h</td>
+                        <td>Départ 17 h - Arrivé 20 h</td>
+                    </tr>
+                    <tr>
+                        <!-- <td></td> -->
+                        <td>200 €</td>
+                        <td>180 €</td>
+                        <td>170 €</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Alitalia</td>
+                        <td>Départ 6 h - Arrivé 9 h</td> 
+                        <td>Départ 13 h - Arrivé 16 h</td> 
+                        <td>Départ 21 h - Arrivé 00 h</td>
+                    </tr>
+                    <tr>
+                        <!-- <td></td> -->
+                        <td>180 €</td>
+                        <td>210 €</td>
+                        <td>168 € </td>
+                    </tr>
+                </tbody>
+
+
+            </table>
+        </section>
+
+       </main> <!-- fin de main -->
+       <footer>
+
+           <!-- pied de page -->footer
+       </footer>
+</body>
+</html>
