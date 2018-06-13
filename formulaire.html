@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- les typos google font anton lemeonda oswald -->
+    <link href="https://fonts.googleapis.com/css?family=Anton|Lemonada:400,700|Oswald:400,600" rel="stylesheet">
+    <!-- font awesome en cdn -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!-- le descriptif qui s'affiche sur un résultat de recherche google -->
+    <meta name="description" content="Site de la phase 2 Andrée Baptiste Pantin 2018/2019 LePoleS">
+    <!-- les mots clés utiles pour les moteurs de recherche moins utilisé de nos jours -->
+    <meta name="keywords" content="HTML, CSS, lepoles pantin">
+    <!-- l'auteur de la page -->
+    <meta name="author" content="Andrée Baptiste">
+    <!-- les mots clés, utiles pour les moteurs de recherche -->
+    <title>Mon formulaire</title>
+    <!-- ma feuille de style -->
+    <link href="css/style.css"  rel="stylesheet">
+</head>
+<body>  
+       <header>
+           <div id="logo">
+
+                <a href="#logo">
+                    <button type="button"><i class="fas fa-arrow-circle-up" aria-hidden="true"></i></button>
+                </a>
+                <img src="img/logo.png" alt="logo">
+             </div> <!-- fin id logo -->
+            <div id="sloggan">
+              <a href="index.html" title="Mon premier site en HTML: accueil"><h1> Mon premier site en HTML5 et CSS3</h1>
+            </a>
+            </div>
+           <div id="social">
+               <a href="https://www.instagram.com/?hl=fr" target="_blank" aria-hidden="true"><i class="fab fa-instagram"></i></a>
+               <a href="https://fr-fr.facebook.com/" target="_blank" aria-hidden="true"><i class="fab fa-facebook-square"></i></a>
+           </div> <!-- fin id social -->
+           <div id="clear"></div>
+       </header>
+       <nav>
+           <!-- zone du menu les liens pour passer de pagee en pages  -->
+           <div class="ancreNav">
+               <a href="index.html" title="Accueil">Accueil</a>
+               <a href="texte.html" title="Texte">Texte</a>
+               <a href="selecteur.html" title="Sélecteur">Sélecteur</a>
+               <a href="image.html" title="Image">Image</a>
+               <a href="position.html" title="Position">Position</a>
+               <a href="zoning.html" title="Zoning">Zoning</a>
+               <a href="tableau.html" title="Tableau">Tableau</a>
+               <a href="liste.html" title="Liste">Liste</a>
+               <a href="lien_menu.html" title="Lien">Lien</a>
+               <a href="formulaire.html" title="Formulaire" class="active">Formulaire</a>
+               <a href="multimedia.html" title="Multimédia">Multimédia</a>
+               <a href="animation.html" title="Animation">Animation</a>
+           </div>
+       </nav>
+       <main> <!-- contenu principal -->
+            <h2>Formulaire</h2>
+            <section class="formulaire">
+<!-- method; manière de faire circuler les données (POST ou GET) -->
+<!-- action; url de destination -->
+<!-- enctype; pour envoyer le fichier correctement -->
+                <form method="POST" action="inscription.php" enctype="multipart/form-data">
+                    <label for="pseudo">Pseudo *</label>
+                    <input type="text" id="pseudo" name="pseudo" required><br>
+
+                    <label for="prenom">Prénom</label>
+                    <input type="text" id="prenom" name="prenom" required><br>
+                    
+                    <label for="password">Mot de passe</label>
+                    <input type="password" id="password" name="password"><br>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email"><br>
+
+                    <label for="cv">Votre CV en .pdf</label>
+                    <input type="file" id="cv" name="cv"><br>
+
+                    <p>Quels sont vos fruits préférés ?</p>
+                    <!-- (label+input)*3 -->
+                        <label for="orange">Orange</label>
+                        <input type="checkbox" id="orange" value="orange">
+                        <label for="fraise">Fraise</label>
+                        <input type="checkbox" id="fraise" value="fraise">
+                        <label for="kiwi">Kiwi</label>
+                        <input type="checkbox" id="kiwi" value="kiwi">
+                        <label for="mangue">Mangue</label>
+                        <input type="checkbox" id="mangue" value="mangue" checked><br>
+
+                        <p>Si vous devez sauver un légume de la destruction ?</p>
+
+                        <form method="GET" id="" action="index.php">
+                                <select name="choix" size="1" onchange="document.forms[''].submit();">
+                                <option value="1">Poireau</option>
+                                <option value="2">Choux de bruxelles</option>
+                                <option value="3">Céleri</option>
+                                </select><br>
+                                
+
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" cols="25" rows="5"></textarea><br>
+
+                        <input type="submit" name="envoyer" value="Envoyer">
+                        <input type="reset" name="annuler" value="Annuler">
+                </form>
+            </section>
+       </main> <!-- fin de main -->
+       <footer>
+
+           <!-- pied de page -->
+       </footer>
+</body>
+</html>
