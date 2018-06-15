@@ -87,6 +87,7 @@ h4 {
     margin-top: 30px;
 }
 
+
 blockquote {
     /* font-style: italic; */
     font-size: 120%;
@@ -185,18 +186,22 @@ nav a:hover {
 
 main {
     background: rgba(178, 178, 178, 0.30);
-    width: 1000px;
+    width: 650px;
     margin: 0 auto;
+   
 }
 
 aside {
-    height: 250px;
+    width: 250px;
+    height: 1020px;
     background: #6acafc;
+    float: left;
+    clear: both;
 }
 
 section {
     margin-top: 50px;
-    padding: 20px;
+    padding: 20px;      
 }
 
 footer {
@@ -1133,7 +1138,7 @@ iframe[allowfullscreen] {
     height: 135px;
     top: 0;
     left: 0;
-    background: linear-gradient( #324040, #a3dfdf)
+    background: linear-gradient( #7852aa, #b38bc5)
  }
 
  #menuRotate .ombre {
@@ -1156,7 +1161,7 @@ iframe[allowfullscreen] {
     left: 50%;
     margin-left: -75px;
     width: 150px;
-    height: 155px;
+    height: 165px;
     color: #01101f;
     text-align: center;
     background: #aaa;
@@ -1191,6 +1196,25 @@ iframe[allowfullscreen] {
 
  #menuRotate dl:hover {
     transform: rotate(-180deg);
-    animation: bounceIn 0.3s ease-in-out;
+    animation: bounceIn 1s ease-in-out;
  }
 
+ /* La règle @ @keyframes permet aux auteurs de définir les étapes qui composent la séquence d'une animation CSS. */
+
+@keyframes bounceIn {
+    from {transform: rotate(0deg);} /* d'ici */
+    75% {transform: rotate(-200deg);}
+    90% {transform: rotate(-175deg);}
+    to {transform: rotate(-180deg);}/* a là ! */
+}
+
+@keyframes bounceOut {
+    from {transform: rotate(0deg);} /* d'ici */
+    0% {transform: rotate(-180deg);}
+    10% {transform: rotate(-165deg);}
+    to {transform: rotate(-360deg);}/* a là ! */
+}
+
+.btnRot {
+    margin-bottom: 5px;
+}
