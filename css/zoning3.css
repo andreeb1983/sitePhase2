@@ -97,10 +97,11 @@ footer {
 
 figure {
     position: relative;
-
+    margin : 0;
 }
 
 figcaption {
+    /*  par rapport à la page */
     position: absolute;
     bottom: 0;
     left: 0;
