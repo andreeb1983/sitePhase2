@@ -50,23 +50,37 @@
                         Elle vous permettra de regrouper les propriétés de background, à savoir color, image, repeat, position, attachement.
                     </ul>
                     <li>color: couleur de la police</li>
-                        <p>Il indique la couleur du texte.</p>
+                        <p>Il indique la couleur du texte: nom, rgb(rouge,vert,bleu), rgba(rouge,vert,bleu,transparence), #CF1A20...</p>
                     <li>float: effet flottant</li>
-
-                        <p></p>
+                        <p>Défini le positionnement d'un élément dans le conteneur: left, right, none</p>
                     <li>font-family: police</li>
+                        <p>Nom de police: police1, police2, police3, serif, sans-serif, monospace</p>
                     <li>font-size: taille de la police</li>
+                        <p>Taille du texte: 1.3em, 16px, 120%...</p>
                     <li>height: hauteur de l'élément</li>
+                        <p>Hauteur: 150px, 80%...</p>
                     <li>left: position à partir de la gauche de la fenêtre</li>
+                        <p>Position par rapport à la gauche: ex: 20px</p>
                     <li>line-height: hauteur de l'interligne</li>
+                        <p>Elle définit la hauteur occupée par une ligne dans votre texte. Sa valeur s'exprime généralement en px et permet, notamment, de centrer un texte dans un bouton à hauteur fixe (en affectant une valeur line-height identique à la hauteur du bouton).</p>
                     <li>margin: marges extérieures</li>
+                        <p>Super-propriété de marge. Une seule valeur saisie applique une marge identique à celle-ci sur chaque coté. Deux valeurs saisie applique une marge bas et haut identique à la première valeur et gauche et droite à la seconde. Combine: margin-top, margin-right, margin-bottom, margin-left. (ex: 23px 5px 23px 5px (haut, droite, bas, gauche))</p>
                     <li>padding: marges intérieures</li>
+                        <p>Super-propriété de marge intérieure. Combine: 23px 5px 23px 5px (haut, droite, bas, gauche) Ce style est très souvent utilisé pour permettre un décalage du contenu (texte, tableau, ...) avec les bords de l'élément concerné.</p>
                     <li>position: position de l'élément dans la page (on n'a utilisé que la valeur (fixed) pour l'instant)</li>
+                        <p>Positionnement: relative, absolute, static</p>
                     <li>text-align: alignement du texte</li>
+                        <p>Alignement horizontal: left, center, right, justify</p>
                     <li>text-decoration: changement des valeurs héritées (ici le souligné qui est standard pour les liens sous tous les navigateurs est supprimé)</li>
+                        <p>Habille le texte d'une ligne placée, selon la valeur attribuée, en dessous (souligné), au dessus ou en travers (rayé)</p>
                     <li>top: position à partir du haut de la fenêtre</li>
+                        <p>Position par rapport au haut: 20px.</p>
+
                     <li>transition: temps de transition lors d'une animation (ici sur les liens de la barre de menus)</li>
+                        <p>Elle permet de définir la transition entre deux états d'un élément. Les différents états peuvent être définis à l'aide de pseudo-classes telles que :hover ou :active ou être définis dynamiquement avec JavaScript. (ex: </p>
+
                     <li>width: largeur de l'élément par rapport à la taille de la fenêtre si on indique une valeur relative (%, em, ...)</li>
+                    <p> Largeur: 150px, 80%...</p>
                 </ol>
         </section>
 
@@ -74,18 +88,18 @@
             <h3>Propriétés CSS à rechercher</h3>
             <h4>Recherchez les propriétés ci-dessous, faites des tests avec sur cette page depuis la console de débuggage pour tester les valeurs qu'elles peuvent prendre</h4>
                 <ol>
-                    <li>font-weight:</li>
-                    <li>letter-spacing:</li>
-                    <li>word-spacing</li>
-                    <li>text-shadow:</li>
-                    <li>background-image:</li>
-                    <li>background-size:</li>
-                    <li>opacity:</li>
-                    <li>border-style:</li>
-                    <li>box-shadow:</li>
-                    <li>list-style-image:</li>
-                    <li>border:</li>
-                    <li>border-radius:</li>
+                    <li>font-weight: Gras (bold, normal)</li>
+                    <li>letter-spacing: Espacement des lettres.</li>
+                    <li>word-spacing :  Espacement des mots.</li>
+                    <li>text-shadow: Définit les effets d'ombre à appliquer au texte de l'élément.</li>
+                    <li>background-image: Image d'arrière-plan</li>
+                    <li>background-size: définit la taille des images d'arrière-plan pour l'élément. La taille de l'image peut être contrainte, complètement ou partiellement afin de conserver ses proportions.</li>
+                    <li>opacity: définit la transparence d'un élément. Autrement dit, elle permet de définir le degré de visibilité de l'arrière-plan sur lequel est placé l'élément</li>
+                    <li>border-style: est une propriété raccourcie qui permet de définir le style des lignes utilisées pour les bordures des quatre côtés de la boîte d'un élément.</li>
+                    <li>box-shadow:  décrit les ombres appliquées à la boîte avec une liste d'ombres séparées par des virgules.</li>
+                    <li>list-style-image: définit l'image utilisée comme puce devant les éléments de listes. On peut également utiliser la propriété raccourcie list-style</li>
+                    <li>border: est une propriété raccourcie qui permet de définir les propriétés liées à la bordure. border peut être utilisée pour définir les valeurs de border-width, border-style, border-color.</li>
+                    <li>border-radius: </li>
                     <li>border-width:</li>
                     <li>font-variant:</li>
                     <li>background-color:</li>
@@ -110,4 +124,5 @@
     </section>
 
 </body>
+<script src="js/recap.js"></script>
 </html>

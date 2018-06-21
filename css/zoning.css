@@ -1,0 +1,42 @@
+body { /* body */
+    background: lightpink;
+    margin: 0 auto; /* centre l'élément  */
+}
+
+/* styles de zoning 1 */
+
+#container { /* container */
+    width: 1200px;
+    text-align: center;
+    margin: 0 auto;    
+}
+
+#container header  { /* header */
+    width: 1200px;
+    height: 250px;
+    background:lightsalmon;
+    text-align: center;
+   
+}
+
+#container aside  { /* aside */
+    width: 200px;
+    height: 600px;
+    background:darkmagenta;
+    text-align: center;
+    float: left;
+}
+
+#container section { /* section */
+    width: 1000px;
+    height: 600px;
+    background: mediumpurple;
+    text-align: center;
+   float: left;
+}
+
+.clear { /* div id clear */
+    clear: both;
+}
+
+
