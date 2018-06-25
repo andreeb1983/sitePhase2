@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+body {
+    background: lavender;
+}
+ .main {    
+     width: 1200px;
+     background: lightcoral;
+     margin: 0 auto;
+     text-align: center;
+ }
+
+ header {
+     height: 100px;
+     background: firebrick;
+     margin: 0;
+ }
+
+ nav {
+     height: 50px;
+     background: midnightblue;
+ }
+
+ section {
+     height: 250px;
+     width: 50%;
+     background:khaki;
+     float: left;
+     
+ }
+
+.section {
+    height: 220px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.zone1, .zone4 {
+     background: violet;
+ }
+
+ footer {
+     height: 120px;
+     background: teal;
+     
+ }
+
+.clear {
+    clear: both;
+} 

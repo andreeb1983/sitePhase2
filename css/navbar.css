@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+body {
+    background: lightgoldenrodyellow;
+}
+
+.navbar {
+    background: darkslategray;
+    position: fixed;/* le menu est( fixé en heut de page */
+    top: 0; /* tout en haut de page */
+    left: 0; /* tout à gauche */
+    width: 100%; /* toute la largeur */
+    height: 60px;
+}
+.navbar a {
+    color: white;
+    text-align: center;
+    display: block;
+    float: right;
+    padding: 20px 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.navbar a:hover {
+    color: crimson;
+    background: rgba(214, 130, 130, 0.808);
+}
+
+.navbar .logo {
+    float: left;
+}
+
+.navbar .logo a {
+    color: #333;
+    background: olive;
+}
+
+.main {
+    height: 2000px; /* pour pouvoir scroller */
+    margin-top: 60px; /* elle doit etre supérieure ou égale à la hauteur de la nav */
+}
