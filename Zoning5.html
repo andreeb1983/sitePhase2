@@ -5,29 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Zoning 5</title>
+    <link rel="stylesheet" href="css/zoning5.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous"> <!-- font awesome -->
 </head>
 <body>
-    <div class="navbar">
-        <div class="""logo"></div>
-        <nav>
+    <div class="wrapper"> <!-- debut div wrapper -->
+        <div class="logo"> <!-- début div logo -->
+            <a href="#">Bienvenue</a>
+        </div>
+        <nav><!-- début de nav -->
             <a href="#">Zone orange</a>
             <a href="#">Zone violette</a>
             <a href="#">zone rouge</a>
         </nav>
-       <div class="container">
-           <header>
-               <h2>zone orange</h2>
-            </header>
-           <section>
-               <h2>Zone violette</h2>
-            </section>
-           <section>
-               <h2>Zone rouge</h2>
-            </section>
-
-       </div>
-        <footer></footer>
-    </div>
-    
+        <div class="clear"></div>
+       <div class="container"> <!-- début div container -->
+            <div class="section"> <!-- début div section -->
+                <section class="un">
+                   <h2> Titre de la zone orange</h2>
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem aperiam culpa, eaque ducimus reprehenderit reiciendis accusamus iste quod facere ea voluptatibus ab deserunt, minima repellat consectetur nobis laudantium, commodi dolorem! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut cum, corrupti autem cupiditate numquam perspiciatis sequi incidunt et architecto aliquam nesciunt praesentium iste fuga ipsam expedita eos impedit dicta illum? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem dolores magnam nobis sint ab consequatur error libero reiciendis numquam possimus dignissimos, voluptatem quia, consequuntur repudiandae quos eum explicabo. Ipsam, dolorem? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto minus ea architecto placeat quo eius ut ipsum reprehenderit ducimus quas enim, inventore veniam quae sapiente? Esse, perspiciatis? Voluptatum, ipsum dicta?</p>
+                </section>
+                <section class="deux">
+                   <h2>Titre de la zone violette</h2>
+                  <figure class="ph">
+                      <img src="img/philharmonie01.png" alt="philharmonie">
+                      <figcaption>Philharmonie de Paris</figcaption>
+                    </figure> 
+                    <div class="form">
+                        <div id="form-main">
+                            <div id="form-div">
+                            <form class="form" id="form1" method="POST" action="inscription.php" enctype="multipart/form-data"></form>
+                                <p class="name">
+                                <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
+                            </p>
+                            <p class="email">
+                                <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
+                            </p>
+                            <p class="text">
+                                <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comment"></textarea>
+                            </p>
+                            <div class="submit">
+                                <input type="submit" value="SEND" id="button-blue"/>
+                                <div class="ease"></div>
+                            </div>
+                            </form>
+                        </div>
+                    </div>                 
+                </section>
+                <section class="trois">
+                   <h2>Titre de la zone rouge</h2>
+                   <figure class="mea">
+                       <img src="img/zoning.jpg" alt="zoning" class="screen">
+                       <figcaption>Mise en abîme</figcaption>
+                    </figure>
+                    <div class="coll">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem aperiam culpa, eaque ducimus reprehenderit reiciendis accusamus iste quod facere ea voluptatibus ab deserunt, minima repellat consectetur nobis laudantium, commodi dolorem! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit, autem dolores eum eius pariatur provident est ipsa eaque, soluta, vitae delectus earum dolorum aliquid laborum? Possimus at officia accusantium fugit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero accusantium dicta molestiae illo soluta. Facere facilis, dolorem, consequatur, sunt repellendus incidunt neque itaque voluptates necessitatibus eaque repellat non blanditiis tempora. Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro deserunt voluptate, blanditiis sequi alias architecto? Doloremque ex hic nobis consectetur nemo beatae laborum dolore. Quasi delectus dolorem sint nisi placeat.</p>
+                    </div>
+                </section>
+                <div class="clear"></div>
+            </div> <!-- fin section -->
+        </div> <!-- fin container -->
+    </div> <!-- fin wrapper -->
+    <div class="clear"></div>
+    <footer>
+        <h2>Footer</h2>
+    </footer>    
 </body>
 </html>
