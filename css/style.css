@@ -213,7 +213,7 @@ footer {
 
 /* le retour en haut de page */
 
-button {
+.button {
     font-size: 350%;
     background: transparent; /* l'icône est transparente */
     border: none;
