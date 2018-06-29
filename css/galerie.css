@@ -73,9 +73,10 @@ section {
 
 .image {
     float: left;
-    padding: 30px 10px 30px 10px;
+    margin:  30px 10px 30px 10px;
    /* ou on utilise position: relative; margin-left: 20%; */
 }
+
 
 section.section .bloc .image figure img{
     width: 100%;
